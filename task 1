@@ -1,0 +1,88 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string name;
+    int score = 0;
+    int answer;
+
+    
+    cout << "THIS IS A QUIZ GAME" << endl;
+    cout << "Please enter your name: ";
+    getline(cin, name);
+
+    
+    cout << "\nQuestion 1: What is five plus three ?" << endl;
+    cout << "a) 6\nb) 7\nc) 8\nd) 9\n";
+    cout << "Your answer in numbers : ";
+    cin >> answer;
+    if (answer == 8) {
+        cout << "Correct!" << endl;
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 8." << endl;
+    }
+
+    
+    cout << "\nQuestion 2: What is two times three?" << endl;
+    cout << "a) 3\nb) 4\nc) 5\nd) 6\n";
+    cout << "Your answer in numbers: ";
+    cin >> answer;
+    if (answer == 6) {
+        cout << "Nice its Correct!" << endl;
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 6." << endl;
+    }
+
+
+    cout << "\nQuestion 3: What is 160 divided by 5?" << endl;
+    cout << "a) 32\nb) 36\nc) 42\nd) 48\n";
+    cout << "Your answer in numbers: ";
+    cin >> answer;
+    if (answer == 32) {
+        cout << "Good job its Correct!" << endl;
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 32." << endl;
+    }
+
+    
+    cout << "\nQuestion 4: What is 24 / 4?" << endl;
+    cout << "a) 4\nb) 5\nc) 6\nd) 7\n";
+    cout << "Your answer in numbers: ";
+    cin >> answer;
+    if (answer == 6) {
+        cout << "Thats so simple,Correct!" << endl;
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 6." << endl;
+    }
+
+    // Question 5
+    cout << "\nQuestion 5: What is 666*777?" << endl;
+    cout << "a) 517482\nb) 676767\nc) 879426\nd) 592272\n";
+    cout << "Your answer (1-4): ";
+    cin >> answer;
+    if (answer == 517482) {
+        cout << "WOW thats amazing,Correct!" << endl;
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 517482." << endl;
+    }
+
+    
+    cout << "\nCongratulations chief, " << name << "!" << endl;
+    cout << "Your final score is: " << score << " out of 5." << endl;
+
+    if (score == 5) {
+        cout << "Gold winner!" << endl;
+    } else if (score >= 3) {
+        cout << "silver winner!" << endl;
+    } else {
+        cout << "try again!" << endl;
+    }
+
+    return 0;
+}
